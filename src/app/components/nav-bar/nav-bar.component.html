@@ -1,0 +1,16 @@
+<div class="textt">  
+    <div class="spotify__top-nav_focus_title">
+        <ul class="spotify__top-nav_auth">
+          <li><button class="forward_btn"><</button></li>
+          <li><button class="backward_btn">></button></li>
+          <li *ngIf="isSearchFieldVisible">
+            <input type="text" class="search-bar" placeholder="What do you want to listen to?" />
+        </li>
+        </ul>
+    </div>
+    
+    <div class="btn">
+        <div class="signup">Sign Up</div>
+        <div class="login"(click)="onNavigateLogin()">Log In</div>
+    </div>
+</div>

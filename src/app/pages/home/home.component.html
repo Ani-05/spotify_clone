@@ -1,0 +1,41 @@
+
+
+<div class="spotify_container row">
+    <div class="spotify_container_sidebar  col-2">
+        <img class="m-4" src="/spotify.png">
+        <div class="sidebar-content">
+            <div class="sidebar-content home">Home</div>
+            <div class="sidebar-content search" (click)="toggleSearchField()">Search</div>
+            <div class="sidebar-content playlist">Your Playlist</div>
+            <div class="sidebar-content songs">Liked Songs</div>
+        </div>
+    </div>
+
+
+    <div class="spotify_container_playlist col-10">
+        <app-nav-bar class="nav"></app-nav-bar>
+        <div class="mt-5 container">
+          <h2>Focus</h2>
+          <div class="song-list">
+            <app-song-cards 
+              *ngFor="let song of focusSongs"
+              [playlistThumbnail]="song.thumbnail"
+              [title]="song.title"
+              [description]="song.description">
+            </app-song-cards>
+          </div>
+          <h2>Spotify Playlist</h2>
+          <div class="song-list">
+            <app-song-cards 
+              *ngFor="let song of playlistSongs"
+              [playlistThumbnail]="song.thumbnail"
+              [title]="song.title"
+              [description]="song.description">
+            </app-song-cards>
+          </div>
+        </div>
+      
+      </div>
+      
+    
+</div>

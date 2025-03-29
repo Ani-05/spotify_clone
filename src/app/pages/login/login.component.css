@@ -1,0 +1,131 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+
+.logo {
+    width: 150px;
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+.fcontain{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 12px;
+    gap: 10px;
+}
+.text {
+    width: 430px; 
+    max-width: 418px;
+    border-radius: 4px; 
+}
+a{
+    margin-top: 10px;
+    color: #383737;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    
+}
+.check input {
+    margin: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.check label {
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: rgb(41, 221, 119); 
+  }
+
+  
+
+.creds{
+    display: flex;
+    flex-direction: row;
+    gap: 146px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__btn {
+    background-color: #1ed760;
+    color: black;
+    padding: 14px;
+    border-radius: 28px;
+    width: 150px;
+    border: none;
+    font-weight: bold;
+  }
+
+  .login__btn:hover {
+    background-color:  rgb(23, 228, 111); 
+  }
+
+  hr {
+    width: 100%;
+    border: 0.5px solid #383737;
+    margin: 10px auto;
+}
+.light {
+    width: 100%;
+    border: 0.5px solid #aeacac;
+    margin: 10px auto;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.forgotten_creds{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup__btn{
+    background-color: #c1c1c1;
+    color: black;
+    padding: 14px;
+    border-radius: 28px;
+    width: 384px;
+    border: 500px;
+}
